@@ -50,8 +50,9 @@ WARNING!!! WARNING!!!
     "Jim",
   ];
   for (let i = 0; i < names.length; i++) {
-    if (names[i].charAt(0) == "J") {
-      console.log(byeSpeaker.speak(names[i]));
+    var firstLetter = names[i].charAt(0).toLowerCase();
+    if (firstLetter ==='j') {
+      byeSpeaker.speak(names[i]);
     } else {
       helloSpeaker.speak(names[i]);
     }
